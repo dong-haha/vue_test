@@ -2,53 +2,31 @@
 <div>
 <div class="menu">
   <el-menu
-    :default-active="activeIndex2"
-    class="el-menu-demo"
-    mode="horizontal"
-    @select="handleSelect"
-    background-color="green"
-    text-color="#fff"
-    active-text-color="#ffd04b">
-        <el-menu-item index="1">
-                <router-link  to="/home">Home</router-link>
-        </el-menu-item>
-        <el-menu-item index="2">
-                <router-link  to="/eFP">eFP</router-link>
-        </el-menu-item>
-        <el-menu-item index="3">
-                <router-link  to="/download">Download</router-link>
-        </el-menu-item>
-        <el-menu-item index="4">
-                <router-link  to="/expression">Expression</router-link>
-        </el-menu-item>
-        <el-menu-item index="5">
-                <router-link  to="/jbrower">JBrower</router-link>
-        </el-menu-item>
-
-
-        <el-submenu index="6">
-            <template slot="title">tools</template>
-            <el-menu-item index="6-1">
-                <router-link  to="/tools/test1">test1</router-link>
-            </el-menu-item>
-            <el-menu-item index="6-2">
-                 <router-link  to="/tools/test2">test2</router-link>
-            </el-menu-item>
-            <el-menu-item index="6-3">
-                 <router-link  to="/tools/test3">test3</router-link>
-            </el-menu-item>
+  default-active="/home" class="el-menu-demo" mode="horizontal" @select="handleSelect" 
+  background-color="#3b903b"
+  text-color="white"
+  router
+    >
+        <el-menu-item index="/home">Home</el-menu-item>
+        <el-menu-item index="/eFP">eFP</el-menu-item>
+        <el-menu-item index="/download">Download</el-menu-item>
+        <el-menu-item index="/jbrower">JBrower</el-menu-item>
+        <el-menu-item index="/expression">Expression</el-menu-item>
+ 
+       <!-- 嵌套路由 -->
+        <el-submenu index="/tools" >
+            <template slot="title"> tools </template>
+            <el-menu-item index="/tools/test1"> test1</el-menu-item>
+            <el-menu-item index="/tools/test2"> test2</el-menu-item>
+            <el-menu-item index="/tools/test3"> test3</el-menu-item>
         </el-submenu>
 
-
-        <el-submenu index="7">
-            <template slot="title">Help</template>
-            <el-menu-item index="7-1">
-                 <router-link  to="/help/test4">test4</router-link>
-            </el-menu-item>
-            <el-menu-item index="7-2">
-                 <router-link  to="/help/test5">test5</router-link>
-            </el-menu-item>
+         <el-submenu index="/help" >
+            <template slot="title"> help </template>
+            <el-menu-item index="/help/test4"> test4</el-menu-item>
+            <el-menu-item index="/help/test5"> tes52</el-menu-item>
         </el-submenu>
+
 
      </el-menu>
 </div>
@@ -64,15 +42,13 @@ export default {
 }
 </script>
 
-<style  scoped>
-.menu{
-    margin-top: 30px;
+<style>
+.el-menu-item{
+   font-size: 16px !important;
+   padding: 0 4% !important;
 }
-/* .el-menu-item{
-    font-size: 15px;
-} */
+.el-submenu__title{
+    font-size: 16px !important;
+}
 
-.a{
-    color: red;
-}
 </style>

@@ -1,34 +1,22 @@
 <template>
 
 <div>
-
-<el-backtop></el-backtop>
-    <!-- 各种组件展示 -->
-    <Carousel/>
+ <!-- router-view之前的是每个页面都会显示的 -->
+        <!-- 返回顶部 -->
+        <el-backtop></el-backtop>
+        <Carousel/>
             <div style="margin-top:20px"></div>
-    <Card01/>
-           <div style="margin-top:20px"></div>
-    <Table/>
-            <div style="margin-top:20px"></div>
-    <Card02/> 
-             <div style="margin-top:20px"></div>
-    <Timeline/>
 
 
+        <!-- 根据路由，展示每页的内容 -->
+        <router-view></router-view>
 
-
-  <router-view></router-view>
 </div>
 </template>
 
 <script>
 // 导入各种组件
 import Carousel from "../components/Carousel"
-import Card01  from "../components/Card01"
-import Table  from "../components/Table"
-import Card02 from "../components/Card02"
-import Timeline from "../components/Timeline"
-
 
 export default {
     name:'Content',
@@ -39,16 +27,10 @@ export default {
     },
     components:{
         Carousel,
-        Card01,
-        Table,
-        Card02,
-        Timeline,
-
     }
 }
 </script>
 
 <style >
- margin{margin:10px}
 
 </style>

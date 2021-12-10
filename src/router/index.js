@@ -8,9 +8,12 @@ import Expression from '../pages/test/Expression'
 import Tools from '../pages/test/Tools'
 import Help from '../pages/test/Help'
 import Test from '../pages/test/Test'
+import error404  from '../pages/test/404'
 
 //创建并暴露一个路由器
 export default new VueRouter({
+	// mode:"history",
+	// base: '/dist/',
 	routes:[
 		{
 			path:'/home',
@@ -49,8 +52,16 @@ export default new VueRouter({
 			component:Test,
 			
 		},
-
-
+		{
+			path:'/jbrower',
+			component:error404,
+			
+		},
+		{
+			path:'/download',
+			component:error404,
+			
+		},
 
 		//配置重定向
 		{path:'',redirect:"home"},

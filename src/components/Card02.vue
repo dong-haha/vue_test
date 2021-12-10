@@ -1,6 +1,6 @@
 <template>
   <div>
-
+<!-- <transition name = "nameoftransition"> -->
         <!-- 卡片 -->
     <el-row>
       <el-col :span="5" v-for="(o, index) in example_data" :key="index" :offset="2" >
@@ -13,10 +13,9 @@
             </div>
           </div>
         </el-card>
+         <div style="margin-top:20px"></div>
       </el-col>
     </el-row>
-
- <div style="margin-top:20px"></div>
 
 <el-row>
   <el-col :span="6" :offset="13">
@@ -36,6 +35,7 @@
            
     
   </div>
+  
 </template>
 
 <script>

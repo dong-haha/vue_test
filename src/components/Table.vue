@@ -1,5 +1,5 @@
 <template>
-  <el-table :data="tableData" stripe style="width: 100%"> 
+  <el-table :data="tableData" stripe style="width: 100%" :header-cell-style="{background:'#83A2FA'}"> 
     <el-table-column prop="date" label="Tissue" width="180"> </el-table-column>
     <el-table-column prop="name" label="Tissue*Period*Replicate" > </el-table-column>
     <el-table-column prop="address" label="Samples"> </el-table-column>
