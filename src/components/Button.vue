@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         dosomething: function(){
-            this.$http.get('http://localhost/query/one?which=number&data=2019301211011')
+            this.$http.get('/query/one?which=number&data=2019301211011')
             .then(function (response) {
                 console.log(response);
             })

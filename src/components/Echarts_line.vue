@@ -51,9 +51,9 @@ export default {
                     interval:1,   //间隔
                     rotate:60 ,  //更改坐标轴文字倾斜角度
                     textStyle: {
-          color: 'black',  //更改坐标轴文字颜色
-          fontSize : 10      //更改坐标轴文字大小
-        }
+                        color: 'black',  //更改坐标轴文字颜色
+                        fontSize : 10      //更改坐标轴文字大小
+                        }
                     } ,
                 type: 'category',
                 boundaryGap: false,

@@ -1,9 +1,16 @@
 <template>
     <el-timeline>
+          <el-timeline-item timestamp="2021/12/13" placement="top">
+        <el-card>
+            <h4>编辑eFP、Home</h4>
+            <p>1.增加了一个form表单和三组测试数据</p>
+            <p>2.将card01组件重写，改为插槽形式</p>
+            <p>3.部分布局改为element ui的Layout 布局</p>
+        </el-card>
+        </el-timeline-item>
         <el-timeline-item timestamp="2021/12/09" placement="top">
         <el-card>
             <h4>编辑expression页面</h4>
-            <p></p>
         </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2021/12/08" placement="top">

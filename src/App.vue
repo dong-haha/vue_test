@@ -1,10 +1,12 @@
 <template>
   <div>
-              <Header/>
-          <div class="container">
-              <Content/>
-              <Footer/>
-          </div>
+     <Header/>
+    
+  <div class="container">
+      <Content/>
+      <Footer/>
+  </div>
+  
   </div>
 </template>
 

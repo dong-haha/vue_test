@@ -1,5 +1,5 @@
 <template>
-    <div id="my_echarts_heatmap"  style="width:1000px;height:400px;"></div>
+    <div id="my_echarts_heatmap"  style="width:1000px;height:500px;"></div>
 </template>
 
 <script>
@@ -52,7 +52,7 @@ export default {
                 animation: false,
                 grid: {
                     height: '70%',
-                    width:'100%',
+                    width:'98%',
                     top: '10%',
                     left:'0%',
                     containLabel:true
@@ -93,7 +93,7 @@ export default {
                     //text:[ 'Log2(TPM+1)'], 
                     max: max,
                     top:"top",                                
-                    right:"0%",  
+                    right:"2%",  
                     calculable: true,
                     orient: 'horizontal',
                 inRange: { color: ['#355F8D','#2CA981','#F1E628'] } 
